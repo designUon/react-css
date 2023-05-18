@@ -20,6 +20,7 @@ export default function StyleComp(props) {
             <Title>
                 {props.children}
             </Title>
+            <StyleButton>버튼</StyleButton>
         </div>
     )
 }
