@@ -1,0 +1,27 @@
+// $ => 변수 지정 가능
+
+$main-color : rgb(116, 116, 228);
+
+// .color {
+//     margin: 50px;
+//     color : $main-color;
+//     font-weight: 900;
+// }
+
+// .color:hover{
+//     color : rgb(64, 64, 172);
+// }
+
+.color {
+    color : $main-color;
+    margin: 50px;
+    font-weight: 900;
+    cursor: pointer;
+
+    // & => 자기자신을 불러와서 사용 가능
+    // 클래스나 태그안에서 자기자신을 불러와서 사용
+    // 여기서 &는 .color와 동일
+    &:hover {
+        color : rgb(64, 64, 172);
+    }
+}
